@@ -9,17 +9,17 @@ import ContentPage from './pages/ContentPage/ContentPage';
 import QuizStartPage from './pages/QuizStartPage/QuizStartPage';
 import QuizPage from './pages/QuizPage/QuizPage';
 import PlaceholderPage from './pages/PlaceholderPage/PlaceholderPage';
-const appBasename = import.meta.env.PROD ? '/travel-ceylon/' : '/';
+
+const basename = import.meta.env.PROD ? '/travel-ceylon/' : '/';
 
 function App() {
   return (
-    <Router basename={appBasename}>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="about/:studentName" element={<StudentProfilePage />} />
-          
           <Route path="content" element={<ContentPage />} />
           <Route path="quiz" element={<QuizStartPage />} />
           <Route 
@@ -31,6 +31,7 @@ function App() {
             element={<PlaceholderPage title="Feedback" message="The feedback form will be available shortly." />} 
           />
         </Route>
+        
         <Route path="quiz/play" element={<QuizPage />} />
       </Routes>
     </Router>

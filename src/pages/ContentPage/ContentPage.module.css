@@ -1,0 +1,88 @@
+.contentPage {
+  padding-top: 120px;
+  padding-bottom: 4rem;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pageContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.infoSection.reversed {
+  flex-direction: row-reverse;
+}
+
+.imageGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover img {
+    transform: scale(1.1);
+}
+
+.textContainer {
+  flex: 1;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.descriptionBox {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #000;
+  text-align: justify;
+}
+
+.descriptionBox p {
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .infoSection, .infoSection.reversed {
+    flex-direction: column;
+  }
+  .imageWrapper img {
+    height: 200px;
+  }
+}

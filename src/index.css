@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:wght@600&family=Montserrat:wght@500&family=Open+Sans&family=Playfair+Display:ital,wght@1,700&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.primary-button {
+    outline: none;
+    display: inline-block;
+    border: solid 1px #8A865D;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    color: #8A865D;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background: #8A865D;
+    color: #000000;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}

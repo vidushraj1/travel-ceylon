@@ -1,0 +1,115 @@
+.header {
+  background: black;
+  color: white;
+  height: 80px;
+  width: 100%;
+  border-bottom: 5px solid rgb(190, 181, 181);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.branding img {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.branding h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 30px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav li a:hover {
+  background-color: rgb(190, 181, 181);
+  color: black;
+}
+
+.nav li a.active {
+  color: #8A865D;
+  font-weight: bold;
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; 
+  color: white;
+}
+
+.menuButton svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+
+  .nav.navOpen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(5px);
+  }
+
+  .nav.navOpen ul {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .nav.navOpen li a {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}

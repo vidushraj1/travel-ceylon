@@ -1,0 +1,121 @@
+.homePageWrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.heroText {
+  font-size: 5rem;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.pageContent {
+  padding: 4rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.infoSection {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: black;
+  border-radius: 20px;
+  border: 5px solid #E6D5D5;
+}
+
+.infoImageContainer {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+a.infoImageContainer {
+    display: block;
+}
+
+.infoImageContainer:hover {
+  transform: scale(1.05);
+}
+
+.infoImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.collageContainer {
+  height: 400px;
+}
+
+.collageContainer img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.infoTextContainer {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+
+.infoTextContainer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.infoTextContainer p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.clickText {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 3rem;
+  }
+  .infoSection {
+    flex-direction: column; 
+  }
+  .collageContainer {
+    height: 300px;
+  }
+}

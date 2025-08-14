@@ -1,0 +1,40 @@
+.backToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: rgb(190, 181, 181);
+  cursor: pointer;
+  outline: none;
+  border: 3px solid rgb(190, 181, 181);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  visibility: hidden;
+}
+
+.backToTopButton.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.backToTopButton:hover {
+  background-color: rgb(190, 181, 181);
+  border-color: rgb(190, 181, 181);
+}
+
+.backToTopButton img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: invert(85%) sepia(8%) saturate(313%) hue-rotate(10deg) brightness(85%) contrast(85%);
+}
+
+.backToTopButton:hover img {
+    filter: invert(0%);
+}

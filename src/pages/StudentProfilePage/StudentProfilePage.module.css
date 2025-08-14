@@ -1,0 +1,110 @@
+.profilePage {
+  padding: 120px 2rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../assets/images/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profileCard {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.imageContainer {
+  flex-basis: 35%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailsContainer {
+  flex-basis: 65%;
+  padding: 2rem;
+}
+
+.detailsContainer h1 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.course {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.infoItem strong {
+  color: #aaa;
+  margin-right: 8px;
+}
+
+.detailsContainer h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #8A865D;
+  padding-left: 10px;
+}
+
+.taskList {
+  list-style-position: inside;
+}
+
+.taskList li {
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.notFound {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.contactLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #8A865D;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .profileCard {
+    flex-direction: column;
+  }
+  .detailsContainer h1 {
+    font-size: 2rem;
+  }
+}

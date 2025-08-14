@@ -3,7 +3,7 @@ import styles from './AboutPage.module.css';
 import ProfileCard from '../../components/common/ProfileCard/ProfileCard';
 
 import nethruwanImg from '../../assets/images/Nethruwan.jpeg';
-import sanukiImg from '../../assets/images/Sanuki.jpeg';
+import sanukiImg from '../../assets/images/sanuki.jpeg';
 import vidushrajImg from '../../assets/images/Vidushraj.jpeg';
 import devarnImg from '../../assets/images/Devarn.jpeg';
 import pageBackground from '../../assets/images/pidurangala.jpeg';

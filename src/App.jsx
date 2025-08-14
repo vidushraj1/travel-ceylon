@@ -12,7 +12,7 @@ import PlaceholderPage from './pages/PlaceholderPage/PlaceholderPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/travel-ceylon/">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

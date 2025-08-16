@@ -15,25 +15,20 @@
   overflow: hidden;
 }
 
-/* 
-  MODIFIED for better mobile compatibility.
-  - Using width/height 100% with object-fit: cover is more robust
-  - This ensures the video covers the entire section without distortion.
-*/
 .heroVideo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This is the key property for responsiveness */
+  object-fit: cover;
   z-index: 1;
 }
 
 .heroText {
   font-size: 5rem;
   color: white;
-  z-index: 2; /* Ensures text is on top of the video */
+  z-index: 2;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   font-family: 'Playfair Display', serif;
   text-align: center;

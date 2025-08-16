@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 
 import HomePage from './pages/HomePage/HomePage';
@@ -10,11 +10,10 @@ import QuizStartPage from './pages/QuizStartPage/QuizStartPage';
 import QuizPage from './pages/QuizPage/QuizPage';
 import PlaceholderPage from './pages/PlaceholderPage/PlaceholderPage';
 
-const basename = import.meta.env.PROD ? '/travel-ceylon/' : '/';
 
 function App() {
   return (
-    <Router basename={basename}>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <div className={styles.homePageWrapper} style={{ backgroundImage: `url(${pageBackground})` }}>
       <section className={styles.heroSection}>
-        <video autoPlay loop muted playsInline className={styles.heroVideo}>
+        <video autoPlay loop muted className={styles.heroVideo}>
           <source src={homepageVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
